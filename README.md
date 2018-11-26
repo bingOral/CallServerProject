@@ -2,7 +2,7 @@
 
 ### import data to elasticSearch
 >>import data structure
-(```)
+```
 {
     "callserv_data_english_vadnn_voa_special":{
         "mappings":{
@@ -76,4 +76,4 @@
         }
     }
 }
-(```)
+```
