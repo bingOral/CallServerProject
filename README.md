@@ -1,7 +1,7 @@
 # ImportDataToElasticRearchProject
 
-### import data to elasticSearch
->>import data structure
+### 1.import data to elasticSearch
+>data structure
 ```
 {
     "callserv_data_english_vadnn_voa_special":{
@@ -77,3 +77,6 @@
     }
 }
 ```
+
+### 2.Userful query
+>a. query wavname
