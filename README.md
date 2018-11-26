@@ -1,1 +1,79 @@
-# SaveDataToElasticRearchProject
+# ImportDataToElasticRearchProject
+
+### import data to elasticSearch
+>>import data structure
+(```)
+{
+    "callserv_data_english_vadnn_voa_special":{
+        "mappings":{
+            "data":{
+                "properties":{
+                    "wavname":{
+                        "type":"keyword"
+                    },
+                    "origin_audio":{
+                        "type":"keyword"
+                    },
+                    "url":{
+                        "type":"keyword"
+                    },
+                    "info":{
+                        "type":"text"
+                    },
+                    "length":{
+                        "type":"float"
+                    },
+                    "oral_score":{
+                        "type":"float"
+                    },
+                    "first_asr_text":{
+                        "type":"keyword"
+                    },
+                    "first_align_text":{
+                        "type":"keyword"
+                    },
+                    "first_text_similarity":{
+                        "type":"float"
+                    },
+                    "second_asr_text":{
+                        "type":"keyword"
+                    },
+                    "second_align_text":{
+                        "type":"keyword"
+                    },
+                    "second_text_similarity":{
+                        "type":"float"
+                    },
+                    "thrid_asr_text":{
+                        "type":"keyword"
+                    },
+                    "thrid_align_text":{
+                        "type":"keyword"
+                    },
+                    "thrid_text_similarity":{
+                        "type":"float"
+                    },
+                    "forth_asr_text":{
+                        "type":"keyword"
+                    },
+                    "forth_align_text":{
+                        "type":"keyword"
+                    },
+                    "forth_text_similarity":{
+                        "type":"float"
+                    },
+                    "first_reserved":{
+                        "type":"float"
+                    },
+                    "second_reserved":{
+                        "type":"keyword"
+                    },
+                    "third_reserved":{
+                        "type":"text"
+                    }
+                }
+            }
+        }
+    }
+}
+(```)
