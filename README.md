@@ -1,7 +1,7 @@
 # ImportDataToElasticRearchProject
 
 ### 1.import data to elasticSearch
->data structure
+- a.English Data structure
 ```
 {
     "mappings":{
@@ -82,6 +82,37 @@
     }
 }
 ```
+- b.Nuance Data structure
+```
+{
+  "callserv_call_nuance_en" : {
+    "aliases" : { },
+    "mappings" : {
+      "data" : {
+        "properties" : {
+          "length" : {
+            "type" : "float"
+          },
+          "reference" : {
+            "type" : "keyword"
+          },
+          "server" : {
+            "type" : "keyword"
+          },
+          "text" : {
+            "type" : "keyword"
+          },
+          "wavname" : {
+            "type" : "keyword"
+          }
+        }
+      }
+    }
+  }
+}
+
+```
 
 ### 2.Userful query
->a. query wavname
+>a. 
+
