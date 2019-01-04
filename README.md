@@ -3,10 +3,12 @@
 ### 一、项目介绍：
 - 抓取和整理网络音频数据，为CallServer项目优化数据模型提供数据支撑；
 
+
 ### 二、工作流程：
 ![](数据团队、教研团队工作流程.png)
 
-### 二、子项目介绍：
+
+### 三、子项目介绍：
 #### 1.[爬虫项目](https://github.com/bingOral/CrawlDataProject)
 #### 2.[切割音频项目](https://github.com/bingOral/CutAudioProject)
 #### 3.[调取外部ASR项目](https://github.com/bingOral/ProcessWavProject)
@@ -14,7 +16,8 @@
 #### 5.[Oral提取项目](https://github.com/bingOral/ParserEduCSVDataProject)
 #### 6.[Logstash导出项目](https://github.com/bingOral/ExportDataFromElasticProject)
 
-### 三、elasticSearch表结构
+
+### 四、elasticSearch表结构
 - 1.English Data结构
 ```
 {
@@ -125,7 +128,8 @@
 
 ```
 
-### 四、Userful query
+
+### 五、Userful query
 - 1.查询音频总时长：
 ```
 GET /callserv_edu_oral_en/data/_search
@@ -158,7 +162,8 @@ GET /callserv_data_english/data/_search
 
 - 欢迎补充！！！
 
-#### 五、其他支持：
+
+#### 六、其他支持：
 - 1.[科学上网代理池](https://github.com/bingOral/haipproxy)
 
 
