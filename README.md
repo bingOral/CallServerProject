@@ -3,11 +3,14 @@
 ### 一、项目介绍：
 - 抓取和整理网络音频数据，为CallServer项目优化数据模型提供数据支撑；
 
+### 二、工作流程：
+![](数据团队、教研团队工作流程.png)
+
 ### 二、子项目介绍：
 #### 1.[爬虫项目](https://github.com/bingOral/CrawlDataProject)
 #### 2.[切割音频项目](https://github.com/bingOral/CutAudioProject)
 #### 3.[调取外部ASR项目](https://github.com/bingOral/ProcessWavProject)
-#### 4.[文本对其项目](https://github.com/bingOral/AlignTextProject)
+#### 4.[文本对齐项目](https://github.com/bingOral/AlignTextProject)
 #### 5.[Oral提取项目](https://github.com/bingOral/ParserEduCSVDataProject)
 #### 6.[Logstash导出项目](https://github.com/bingOral/ExportDataFromElasticProject)
 
