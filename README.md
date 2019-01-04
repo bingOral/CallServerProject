@@ -85,8 +85,6 @@
 - b.Nuance Data structure
 ```
 {
-  "callserv_call_nuance_en" : {
-    "aliases" : { },
     "mappings" : {
       "data" : {
         "properties" : {
@@ -114,5 +112,33 @@
 ```
 
 ### 2.Userful query
->a. 
+- a.查询音频总时长：
+```
+GET /callserv_edu_oral_en/data/_search
+{
+  "size": 0,
+  "aggs": {
+    "SUM_LENGTH": {
+      "sum": {
+        "field": "length"
+      }
+    }
+  }
+}
+```
+- b.查询爬取哪些URL数据：
+```
+GET /callserv_data_english/data/_search
+{
+  "_source": false, 
+  "size": 0, 
+  "aggs": {
+    "distinct": {
+      "cardinality": {
+        "field": "url"
+      }
+    }
+  }
+}
+```
 
