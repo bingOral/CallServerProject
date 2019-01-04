@@ -1,7 +1,18 @@
-# ImportDataToElasticRearchProject
+# CallServer数据项目
 
-### 1.import data to elasticSearch
-- a.English Data structure
+### 一、项目介绍：
+- 抓取和整理网络音频数据，为CallServer项目优化数据模型提供数据支撑；
+
+### 二、子项目介绍：
+#### 1.[爬虫项目](https://github.com/bingOral/CrawlDataProject)
+#### 2.[切割音频项目](https://github.com/bingOral/CutAudioProject)
+#### 3.[调取外部ASR项目](https://github.com/bingOral/ProcessWavProject)
+#### 4.[文本对其项目](https://github.com/bingOral/AlignTextProject)
+#### 5.[Oral提取项目](https://github.com/bingOral/ParserEduCSVDataProject)
+#### 6.[Logstash导出项目](https://github.com/bingOral/ExportDataFromElasticProject)
+
+### 三、elasticSearch表结构
+- 1.English Data结构
 ```
 {
     "mappings":{
@@ -82,7 +93,7 @@
     }
 }
 ```
-- b.Nuance Data structure
+- 2.Nuance Data结构
 ```
 {
     "mappings" : {
@@ -111,8 +122,8 @@
 
 ```
 
-### 2.Userful query
-- a.查询音频总时长：
+### 四、Userful query
+- 1.查询音频总时长：
 ```
 GET /callserv_edu_oral_en/data/_search
 {
@@ -126,7 +137,7 @@ GET /callserv_edu_oral_en/data/_search
   }
 }
 ```
-- b.查询爬取哪些URL数据：
+- 2.查询爬取哪些URL数据：
 ```
 GET /callserv_data_english/data/_search
 {
@@ -141,4 +152,11 @@ GET /callserv_data_english/data/_search
   }
 }
 ```
+
+- 欢迎补充！！！
+
+#### 五、其他支持：
+- 1.[科学上网代理池](https://github.com/bingOral/haipproxy)
+
+
 
